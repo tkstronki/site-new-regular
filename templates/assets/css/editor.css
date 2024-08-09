@@ -1,0 +1,64 @@
+ /* Editor */
+.align_left, .align_right, .align_center {
+	/* display images in center rather than aligned */
+	display: block;
+	float: none;
+	margin: var(--sp-md) auto;
+	max-width: 100%;
+}
+
+pre, code, code[class*=language-] {
+    white-space: pre-wrap;
+}
+
+figure,
+figure figcaption {
+	/* let figcaption display as wide as needed below image */
+	display: block;
+	text-align: center;
+}
+
+/* desktop */
+@media (min-width: 48rem) {
+
+	.align_left {
+		/* for images placed in rich text editor */
+		float: left;
+		padding: var(--sp-md);
+		position: relative;
+		max-width: 50%;
+	}
+
+	.align_right {
+		/* for images placed in rich text editor */
+		float: right;
+		padding: var(--sp-md);
+		max-width: 50%;
+	}
+
+	.align_center {
+		/* for images placed in rich text editor */
+		display: block;
+		margin: auto;
+		padding: var(--sp-md);
+		position: relative;
+	}
+
+	figure {
+		/* figure for image that has a caption */
+		/* display: table; */
+		margin: auto;
+		padding: var(--sp-xl) 0;
+		max-width: var(--mw-md);
+	}
+
+	figure figcaption {
+		/* display caption text below image contained to image width */
+		display: table-caption;
+		caption-side: bottom;
+		font-size: var(--fs-md);
+		line-height: var(--sp-sm);
+		margin-top: var(--sp-sm);
+	}
+
+}

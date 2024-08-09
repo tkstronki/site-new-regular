@@ -1,0 +1,74 @@
+:root {
+    --outline-size: var(--sp-4xs);
+    --outline-color: var(--color-accent-60);
+    --outline-offset: var(--sp-5xs);
+    --outline-br: var(--br);
+}
+
+/* display */
+.dn {
+    display: none;
+}
+
+.db {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.df {
+    display: flex;
+}
+
+.dg {
+    display: grid;
+}
+
+/* responsive class ( img ) */
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* text lead */
+.lead {
+    opacity: .8;
+}
+
+/* overlay */
+.overlay {
+    position: fixed;
+    z-index: 998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: color-mix(in srgb, var(--color-black), transparent 30%);
+    min-height: 100dvh;
+}
+
+/* simple outline */
+.outline, .title, section :first-child:where(h3) {
+    outline: var(--outline-size) dotted var(--outline-color);
+    outline-offset: var(--outline-offset);
+    border-radius: var(--outline-br);
+    padding: var(--sp-sm);
+    display: inline-block;
+
+    &.-md {
+        --outline-size: var(--sp-2xs);
+        --outline-offset: var(--sp-sm);
+    }
+
+    &.-sm {
+        --outline-size: var(--sp-5xs);
+        --outline-offset: var(--sp-7xs);
+    }
+
+    &.-xs {
+        --outline-size: var(--sp-6xs);
+        --outline-offset: var(--sp-7xs);
+    }
+}

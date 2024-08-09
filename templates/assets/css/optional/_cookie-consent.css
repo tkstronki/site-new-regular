@@ -1,0 +1,25 @@
+#cc-main {
+    .cm--box {
+        .cm__texts, .cm__title, .cm__desc, .cm__btns {
+            background-color: var(--color-black) !important;
+            color: var(--color-primary) !important;
+        }
+    }
+    .pm__header, .pm__body, .pm__section,
+    .pm__section-title, .pm__footer, .section__toggle {
+        background-color: var(--color-black) !important;
+        color: var(--color-primary) !important;
+
+        .pm__section-desc {
+            color: var(--color-white) !important;
+        }
+
+        .pm__close-btn {}
+
+        .pm__btn, .pm__btn-secondary {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            border: none;
+        }
+    }
+}

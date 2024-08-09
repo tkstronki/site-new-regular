@@ -1,0 +1,12 @@
+{
+    "name": "processwire-starter-profile/pwsp",
+    "authors": [
+        {
+            "name": "tkstronki.pl",
+            "email": "tkstronki@gmail.com"
+        }
+    ],
+    "require": {
+        "mpratt/embera": "~2.0"
+    }
+}

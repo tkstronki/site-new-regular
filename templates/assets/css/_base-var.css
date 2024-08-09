@@ -1,0 +1,114 @@
+/*
+    CSS Variables for consistent styling
+    ------------------------------------
+    Naming conventions:
+    - `font-primary` : Primary font
+    - `font-secondary` : Secondary font
+    - `bfs` : Base Font Size
+    - `fs`  : Font Size
+    - `sp`  : Spacing (padding, margin)
+    - `lh`  : Line Height
+    - `bp`  : Breakpoints
+    - `mw`  : Max Width
+    - `br`  : Border Radius
+    - `sh`  : Shadow
+    - `li`  : List Item
+    - `fs-fl`: Fluid Font Sizes
+*/
+
+/* Base HTML font size */
+:where(html) {
+
+    /* Set Fonts */
+    --font-primary: var(--font-dm-sans), Arial, sans-serif;
+    --font-secondary: var(--font-inter), Arial, sans-serif;
+
+    /* Base Font Size */
+    --bfs: 16px;
+
+    /* Font sizes for mobile */
+    --fs-6xl: 2.25rem; /* 36px */
+    --fs-5xl: 2.125rem; /* 34px */
+    --fs-4xl: 2rem; /* 32px */
+    --fs-3xl: 1.75rem; /* 28px */
+    --fs-2xl: 1.5rem; /* 24px */
+    --fs-xl: 1.375rem; /* 22px */
+    --fs-lg: 1.375rem; /* 22px */
+    --fs-md: 1.25rem; /* 20px */
+    --fs-sm: 1.125rem; /* 18px */
+    --fs-xs: 1rem; /* 16px */
+
+    /* Fluid font sizes */
+    --fs-fl-3xl: clamp(2rem, 14vw, 3rem); /* Very large */
+    --fs-fl-2xl: clamp(1.75rem, 12vw, 2.625rem); /* Large */
+    --fs-fl-xl: clamp(1.5rem, 10vw, 2.25rem); /* Medium large */
+    --fs-fl-lg: clamp(1.25rem, 8vw, 1.875rem); /* Medium */
+    --fs-fl-md: clamp(0.9375rem, 6vw, 1.5625rem); /* Medium small */
+    --fs-fl-sm: clamp(0.625rem, 4vw, 0.9375rem); /* Small */
+    --fs-fl-xs: clamp(0.375rem, 2vw, 0.5rem); /* Very small */
+
+    /* Spacing (padding, margin) */
+    --sp-7xl: 6rem; /* 96px */
+    --sp-6xl: 4.5rem; /* 72px */
+    --sp-5xl: 3.5rem; /* 56px */
+    --sp-4xl: 2rem; /* 32px */
+    --sp-3xl: 1.625rem; /* 26px */
+    --sp-2xl: 1.375rem; /* 22px */
+    --sp-xl: 1.188rem; /* 19px */
+    --sp-lg: 1rem; /* 16px */
+    --sp-md: 0.813rem; /* 13px */
+    --sp-sm: 0.688rem; /* 11px */
+    --sp-xs: 0.5rem; /* 8px */
+    --sp-2xs: 0.375rem; /* 6px */
+    --sp-3xs: 0.313rem; /* 5px */
+    --sp-4xs: 0.25rem; /* 4px */
+    --sp-5xs: 0.188rem; /* 3px */
+    --sp-6xs: 0.125rem; /* 2px */
+    --sp-7xs: 0.063rem; /* 1px */
+
+    /* Line heights */
+    --lh-xl: 2.1;
+    --lh-lg: 1.72;
+    --lh-md: 1.58;
+    --lh-sm: 1.4;
+    --lh-xs: 1.4;
+
+    /* Max widths */
+    --mw-3xl: 120rem;
+    --mw-2xl: 96rem;
+    --mw-xl: 80rem;
+    --mw-lg: 64rem;
+    --mw-md: 52rem;
+    --mw-sm: 48rem;
+    --mw-xs: 42rem;
+    --mw-2xs: 38rem;
+    --mw-3xs: 32rem;
+    --mw-4xs: 28rem;
+    --mw-5xs: 24rem;
+    --mw-6xs: 20rem;
+
+    /* Border radius */
+    --br: var(--sp-sm);
+
+    /* Shadows */
+    --sh: 0 2px 4px var(--color-shadow);
+    --sh-md: 0.5rem 0.1875rem 0.8125rem 0rem var(--color-shadow);
+    --sh-sm: 0.5rem 0.1875rem 0.8125rem -0.3125rem var(--color-shadow);
+    --sh-xs: 0.5rem 0.1875rem 0.8125rem -0.5rem var(--color-shadow);
+
+    /* Font sizes for desktop */
+    @media (min-width: 48rem) {
+        /* Font sizes */
+        --fs-6xl: 3.75rem; /* 60px */
+        --fs-5xl: 3.25rem; /* 52px */
+        --fs-4xl: 2.875rem; /* 46px */
+        --fs-3xl: 2.25rem; /* 36px */
+        --fs-2xl: 1.875rem; /* 30px */
+        --fs-xl: 1.75rem; /* 28px */
+        --fs-lg: 1.5rem; /* 24px */
+        --fs-md: 1.375rem; /* 22px */
+        --fs-sm: 1.25rem; /* 20px */
+        --fs-xs: 1.125rem; /* 18px */
+    }
+}
+

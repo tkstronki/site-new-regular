@@ -1,0 +1,20 @@
+/* overwrites custom css frameworks like - uikit3  in this case will be accordion ( change colors for dark mode ) */
+/* .uk-accordion-title {
+    color: var(--text-color);
+} */
+
+
+.uk-modal-dialog  {
+    &.uk-modal-body {
+        background: var(--color-red);
+    }
+}
+
+
+.uk-button-default {
+    color: var(--text-color);
+
+    &:hover {
+        color: var(--text-color);
+    }
+}

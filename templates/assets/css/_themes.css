@@ -1,0 +1,78 @@
+/* Basic site colors for HTML is set in the _color-var.css as default */
+/* html, [data-theme = 'basic'] {} */
+
+/* Dark mode */
+[data-theme = 'dark'], body.dark {
+    --bg-color: var(--color-black);
+    --text-color: var(--color-white);
+    --link-color: var(--color-orange);
+    --link-hover: var(--color-yellow);
+    --link-selected: var(--color-red);
+    --heading-color: var(--color-silver);
+    --color-icon: var(--color-white);
+    --btn-def-bg: var(--color-shadow-stealthy);
+    --btn-def-color: var(--color-white);
+    --shadow-color: var(--color-shadow-dm);
+
+    #seoHeadings {
+        background-color: var(--color-shadow-dm);
+    }
+
+    .logo._svg {
+        filter: invert(1);
+    }
+}
+
+/* Cyberpunk theme */
+[data-theme = 'cyberpunk'], body.cyberpunk {
+
+    --bg-color: var(--color-navy);
+    --text-color: var(--color-white);
+    --link-color: var(--color-orange);
+    --link-hover: var(--color-silver);
+    --link-selected: var(--color-fuchsia);
+    --heading-color: var(--color-silver);
+    --color-icon: var(--color-white);
+    --btn-def-bg: var(--color-purple);
+    --btn-def-color: var(--color-white);
+    --shadow-color: var(--color-shadow-dm);
+    --border-radius: var(--sp-md);
+    --outline-color: var(--color-violet);
+
+    h1, .main-home .hero {
+        color: var(--color-red);
+    }
+
+    .main-home .hero {
+        h1 {
+            color: var(--color-red);
+            .random {
+                --outline-color: var(--color-violet);
+                background-color: var(--color-red);
+            }
+        }
+    }
+
+    hr {
+        border-top: var(--sp-4xs) dotted var(--color-red);
+    }
+
+    button:not(.-icon), .btn:not(.-icon) {
+        &.-primary {
+            background-color: var(--color-turq);
+            color: var(--color-white);
+        }
+    }
+
+    .logo._svg {
+        filter: invert(1);
+    }
+
+    .component_card {
+        background-color: var(--color-purple);
+        :where(img){
+            filter: drop-shadow(2px 4px 6px var(--bg-color));
+        }
+    }
+
+}

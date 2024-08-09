@@ -1,0 +1,192 @@
+/* animations */
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.slide-up {
+    animation: slideUp 1s forwards;
+}
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-down {
+    animation: slideDown 1s forwards;
+}
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.slide-left {
+    animation: slideLeft 1s forwards;
+}
+@keyframes slideLeft {
+    from { transform: translateX(20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-right {
+    animation: slideRight 1s forwards;
+}
+@keyframes slideRight {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.zoom-in {
+    animation: zoomIn 1s forwards;
+}
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.zoom-out {
+    animation: zoomOut 1s forwards;
+}
+@keyframes zoomOut {
+    from { transform: scale(1.2); opacity: 1; }
+    to { transform: scale(1); opacity: 0; }
+}
+
+.rotate {
+    animation: rotate 1s forwards;
+}
+@keyframes rotate {
+    from { transform: rotate(0deg); opacity: 0; }
+    to { transform: rotate(360deg); opacity: 1; }
+}
+
+.rotate-out {
+    animation: rotateOut 1s forwards;
+}
+@keyframes rotateOut {
+    from { transform: rotate(360deg); opacity: 1; }
+    to { transform: rotate(0deg); opacity: 0; }
+}
+
+.flip-in {
+    animation: flipIn 1s forwards;
+}
+@keyframes flipIn {
+    from { transform: rotateY(90deg); opacity: 0; }
+    to { transform: rotateY(0deg); opacity: 1; }
+}
+
+.flip-out {
+    animation: flipOut 1s forwards;
+}
+@keyframes flipOut {
+    from { transform: rotateY(0deg); opacity: 1; }
+    to { transform: rotateY(90deg); opacity: 0; }
+}
+
+.bounce-in {
+    animation: bounceIn 1s forwards;
+}
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        transform: scale3d(.9, .9, .9);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        transform: scale3d(.97, .97, .97);
+    }
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.bounce-out {
+    animation: bounceOut 1s forwards;
+}
+@keyframes bounceOut {
+    20% {
+        transform: scale3d(.9, .9, .9);
+    }
+    50%, 55% {
+        opacity: 1;
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+}
+
+.fade-slide-up {
+    animation: fadeSlideUp 1s forwards;
+}
+@keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-slide-down {
+    animation: fadeSlideDown 1s forwards;
+}
+@keyframes fadeSlideDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-slide-left {
+    animation: fadeSlideLeft 1s forwards;
+}
+@keyframes fadeSlideLeft {
+    from { opacity: 0; transform: translateX(20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.fade-slide-right {
+    animation: fadeSlideRight 1s forwards;
+}
+@keyframes fadeSlideRight {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.spin-in {
+    animation: spinIn 1s forwards;
+}
+@keyframes spinIn {
+    from { opacity: 0; transform: rotate(0deg); }
+    to { opacity: 1; transform: rotate(360deg); }
+}
+
+.spin-out {
+    animation: spinOut 1s forwards;
+}
+@keyframes spinOut {
+    from { opacity: 1; transform: rotate(360deg); }
+    to { opacity: 0; transform: rotate(0deg); }
+}

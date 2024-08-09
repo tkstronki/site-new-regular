@@ -1,0 +1,89 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "57671546a372c7d7e84eed7742c741d5",
+    "packages": [
+        {
+            "name": "mpratt/embera",
+            "version": "2.0.40",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mpratt/Embera.git",
+                "reference": "6fc913ddd6510337dc15f8124bd7de46d891e7d5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mpratt/Embera/zipball/6fc913ddd6510337dc15f8124bd7de46d891e7d5",
+                "reference": "6fc913ddd6510337dc15f8124bd7de46d891e7d5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^1.4",
+                "phpunit/phpunit": "^9.0"
+            },
+            "suggest": {
+                "ext-curl": "Fetch data using curl instead of using file_get_contents"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Embera\\": "src/Embera"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Pratt",
+                    "email": "yo@michael-pratt.com",
+                    "homepage": "http://www.michael-pratt.com",
+                    "role": "Author/Developer"
+                }
+            ],
+            "description": "Oembed consumer library. Converts urls into their html embed code. Supports 150+ sites, such as Youtube, Twitter, vimeo, Instagram etc.",
+            "homepage": "https://github.com/mpratt/Embera",
+            "keywords": [
+                "Auto embed",
+                "Embed Text",
+                "Responsive Embeds",
+                "Url Embed",
+                "embed",
+                "instagram",
+                "oembed",
+                "twitter",
+                "vimeo",
+                "vine",
+                "youtube"
+            ],
+            "support": {
+                "issues": "https://github.com/mpratt/Embera/issues",
+                "source": "https://github.com/mpratt/Embera/tree/2.0.40"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/mtpratt",
+                    "type": "paypal"
+                }
+            ],
+            "time": "2024-06-13T20:18:59+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

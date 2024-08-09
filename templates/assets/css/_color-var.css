@@ -1,0 +1,97 @@
+:where(html) {
+
+/* variable colors */
+    --color-white: #FFFFFF;
+    --color-black: #111111;
+    --color-navy: #001F3F;
+    --color-shadow: #2a2b36;
+    --color-shadow-dm: #424350;
+    --color-shadow-stealthy: #6173856b;
+    --color-gray: #AAAAAA;
+    --color-silver: #DDDDDD;
+
+    --color-aqua: #7fdbff;
+    --color-blue: #0074D9;
+    --color-violet: #6e58b3;
+    --color-teal: #39CCCC;
+    --color-dark-teal: #318178;
+    --color-turq: #0fc5b0;
+    --color-green: #2ECC40;
+    --color-olive: #3D9970;
+    --color-lime: #01FF70;
+
+    --color-yellow: #FFDC00;
+    --color-orange: #FF851B;
+    --color-red: #FF4136;
+    --color-red-error: #ff5e55;
+    --color-fuchsia: #F012BE;
+    --color-purple: #B10DC9;
+    --color-maroon: #85144B;
+
+    --color-primary: var(--color-blue);
+    --color-secondary: var(--color-gray);
+    --color-accent: var(--color-violet);
+    --color-warning: var(--color-orange);
+    --color-success: var(--color-green);
+    --color-error: var(--color-red-error);
+    --color-disabled: var(--color-silver);
+
+/* variable colors for basic theme */
+    --bg-color: var(--color-white);
+    --text-color: var(--color-black);
+    --link-color: var(--color-blue);
+    --link-hover: var(--color-shadow-dm);
+    --link-selected: var(--color-violet);
+    --heading-color: var(--color-navy);
+    --color-icon: var(--color-black);
+    --btn-def-bg: var(--color-white);
+    --btn-def-color: var(--color-black);
+    --shadow-color: var(--color-shadow);
+
+/* mix Contrast */
+    --mix-contrast: var(--text-color);
+
+/* mix primary */
+    --color-primary-10: color-mix(in srgb, var(--color-primary), transparent 90%);
+    --color-primary-20: color-mix(in srgb, var(--color-primary), transparent 80%);
+    --color-primary-30: color-mix(in srgb, var(--color-primary), transparent 70%);
+    --color-primary-40: color-mix(in srgb, var(--color-primary), transparent 60%);
+    --color-primary-50: color-mix(in srgb, var(--color-primary), transparent 50%);
+    --color-primary-60: color-mix(in srgb, var(--color-primary), transparent 40%);
+    --color-primary-70: color-mix(in srgb, var(--color-primary), transparent 30%);
+    --color-primary-80: color-mix(in srgb, var(--color-primary), transparent 20%);
+    --color-primary-90: color-mix(in srgb, var(--color-primary), transparent 10%);
+
+/* mix secondary */
+    --color-secondary-10: color-mix(in srgb, var(--color-secondary), transparent 90%);
+    --color-secondary-20: color-mix(in srgb, var(--color-secondary), transparent 80%);
+    --color-secondary-30: color-mix(in srgb, var(--color-secondary), transparent 70%);
+    --color-secondary-40: color-mix(in srgb, var(--color-secondary), transparent 60%);
+    --color-secondary-50: color-mix(in srgb, var(--color-secondary), transparent 50%);
+    --color-secondary-60: color-mix(in srgb, var(--color-secondary), transparent 40%);
+    --color-secondary-70: color-mix(in srgb, var(--color-secondary), transparent 30%);
+    --color-secondary-80: color-mix(in srgb, var(--color-secondary), transparent 20%);
+    --color-secondary-90: color-mix(in srgb, var(--color-secondary), transparent 10%);
+
+/* mix accent */
+    --color-accent-10: color-mix(in srgb, var(--color-accent), transparent 90%);
+    --color-accent-20: color-mix(in srgb, var(--color-accent), transparent 80%);
+    --color-accent-30: color-mix(in srgb, var(--color-accent), transparent 70%);
+    --color-accent-40: color-mix(in srgb, var(--color-accent), transparent 60%);
+    --color-accent-50: color-mix(in srgb, var(--color-accent), transparent 50%);
+    --color-accent-60: color-mix(in srgb, var(--color-accent), transparent 40%);
+    --color-accent-70: color-mix(in srgb, var(--color-accent), transparent 30%);
+    --color-accent-80: color-mix(in srgb, var(--color-accent), transparent 20%);
+    --color-accent-90: color-mix(in srgb, var(--color-accent), transparent 10%);
+
+    /* mix contrast */
+    --color-contrast-10: color-mix(in srgb, var(--mix-contrast), transparent 10%);
+    --color-contrast-20: color-mix(in srgb, var(--mix-contrast), transparent 20%);
+    --color-contrast-30: color-mix(in srgb, var(--mix-contrast), transparent 30%);
+    --color-contrast-40: color-mix(in srgb, var(--mix-contrast), transparent 40%);
+    --color-contrast-50: color-mix(in srgb, var(--mix-contrast), transparent 50%);
+    --color-contrast-60: color-mix(in srgb, var(--mix-contrast), transparent 60%);
+    --color-contrast-70: color-mix(in srgb, var(--mix-contrast), transparent 70%);
+    --color-contrast-80: color-mix(in srgb, var(--mix-contrast), transparent 80%);
+    --color-contrast-90: color-mix(in srgb, var(--mix-contrast), transparent 90%);
+}
